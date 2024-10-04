@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site de exemplo do módulo de CSS">
+    <meta name="keywords" content="Agência Digital, CSS, HTML">
+    <title>Agência Fake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Agência De Marketing</h1>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Serviços</a>
+            <a href="#">Depoimentos</a>
+            <a href="#">Equipe</a>
+            <a href="#">Portfolio</a>
+            <a id="botao" href="#contato">Fale Conosco</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="headline">
+            <h2 class="sp" style="letter-spacing: 15px;">Você achou a melhor</h2>
+            <h2 style="font-size:80px">Agência Digital</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime qui <br> numquam minus quas neque nemo dicta itaque non commodi doloremque,<br> quasi maiores assumenda labore iste consequuntur iure fugiat beatae?</p>
+            <a href="#" class="contact-btn">Contrate Agora</a>
+        </div>
+        <div class="img-headline">
+            <img style="max-width: 100%;" src="img/6058575.jpg" width="1000" alt="Imagem de Cabeçalho">
+        </div>
+    </header>
+
+    <section>
+        <h2>O que podemos fazer pelo seu negócio?</h2>
+        <div class="servicos">
+            <div class="card">
+                <img src="img/imagem marketing.jpeg" alt="Desenvolvimento de Sites">
+                <div class="card-text">
+                    <h3 style="color: black;">Desenvolvimento de Sites</h3>
+                    <p  style="color: black;">O desenvolvimento de sites envolve a criação e manutenção de páginas da web utilizando linguagens como HTML, CSS e JavaScript, além de frameworks que garantem uma interface interativa e responsiva. É fundamental para estabelecer uma presença online eficaz, permitindo que empresas e indivíduos comuniquem suas marcas e serviços de forma clara.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/desenvolvimento de apps.jpeg" alt="Desenvolvimento de Apps">
+                <div class="card-text">
+                    <h3  style="color: black;">Desenvolvimento de Apps</h3>
+                    <p  style="color: black;">O desenvolvimento de aplicativos consiste na criação de software para dispositivos móveis ou desktops, utilizando linguagens como Swift e Kotlin. O foco é oferecer uma experiência de usuário intuitiva e funcionalidades eficazes.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/marketing.jpg" alt="Marketing Digital">
+                <div class="card-text">
+                    <h3  style="color: black;">Marketing Digital</h3>
+                    <p  style="color: black;">
+                        O Marketing Digital é uma estratégia que utiliza canais online para promover produtos e serviços, visando aumentar a visibilidade e alcançar o público-alvo. Inclui práticas como SEO, mídias sociais, e-mail marketing e marketing de conteúdo para maximizar o engajamento e conversões.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="depoimentos-container">
+            <div class="depoimento-card">
+                <p>"A Agência De Marketing transformou nosso site! O atendimento foi excepcional."</p>
+                <h4 style="color: rgb(0, 0, 0);">- Cliente 1</h4>
+            </div>
+            <div class="depoimento-card">
+                <p>"O desenvolvimento do meu aplicativo foi feito de forma rápida e eficiente. Estou muito satisfeito!"</p>
+                <h4 style="color: rgb(0, 0, 0);">- Cliente 2</h4>
+            </div>
+            <div class="depoimento-card">
+                <p>"Recomendo a Agência De Marketing para quem busca qualidade e comprometimento."</p>
+                <h4 style="color: rgb(0, 0, 0);">- Cliente 3</h4>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="membros">
+            <div class="membro">
+                <img src="img/img pessoa.jpeg" alt="Membro 1">
+                <h3>João Marcos</h3>
+                <p>Programador Full Stack</p>
+            </div>
+            <div class="membro">
+                <img src="img/pe.jpeg" alt="Membro 2">
+                <h3>Ana Giulia</h3>
+                <p>Disigner</p>
+            </div>
+            <div class="membro">
+                <img src="img/p.jpeg" alt="Membro 3">
+                <h3>Felipe Oliveira</h3>
+                <p>Desenvolvedor Web</p>
+            </div>
+            <div class="membro">
+                <img src="img/pessoa.jpeg" alt="Membro 4">
+                <h3>Maria Clara</h3>
+                <p>Marketing Digital</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <p>Tem alguma dúvida ou precisa de mais informações? Entre em contato conosco!</p>
+        <form id="contact-form" action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <input type="tel" name="telefone" placeholder="Seu Telefone" required>
+            <textarea name="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <div class="horarios">
+            <h3>Horários de Atendimento</h3>
+            <p>Estamos disponíveis de segunda a sexta-feira, das 9h às 18h.</p>
+        </div>
+    </section>
+    
+
+    <!-- Modal para mensagem de sucesso -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Mensagem enviada com sucesso!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">Agência De Marketing</h1>
+            <p style="color: white;">Um site feito somente por HTML e CSS</p>
+            <div class="redes-sociais">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+            <div class="imagens-aplicativos">
+                <img src="img/facebook.png" alt="Aplicativo 1" style="max-width: 50px; margin: 0 10px;">
+                <img src="img/instagram.png" alt="Aplicativo 2" style="max-width: 50px; margin: 0 10px;">
+                <img src="img/linkedin.png" alt="Aplicativo 3" style="max-width: 50px; margin: 0 10px;">
+                <!-- Adicione mais imagens se necessário -->
+            </div>
+        </div>
+        <b style="color: white;">© Todos os direitos reservados.</b>
+        <div class="links-rodape">
+            <a href="#" style="color: white;">Política de Privacidade</a> | 
+            <a href="#" style="color: white;">Termos de Uso</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
